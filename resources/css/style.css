@@ -1,0 +1,133 @@
+html {
+  font-size: 18px;
+  line-height: 1.4px;
+}
+/*This is the parth 1 of css*/
+.no1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  width:100%;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-repeat:no-repeat ;
+  background-size: cover;
+
+
+}
+/*This part design the footer*/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 74%;
+  background-color: cadetblue;
+  font-family: Helvetica;
+  font-size: 1rem;
+  color: white;
+  margin-top: 1rem;
+}
+.logo-top{
+display: flex;
+align-items: center;
+margin: 1rem 1rem;
+}
+.logo-top img {
+  height: 1.5rem;
+  margin: 0 1rem;
+}
+.right-header{
+  display: flex;
+  align-items: center;
+  border: 1rem 1rem;
+  margin-right: 2rem;
+}
+.right-header span {
+  margin-left: 2rem;
+}
+/* This part is styling for statement part*/
+.statement {
+  width: 74%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top:10rem;
+  margin-right: -2rem;
+}
+.statement h1 {
+  background-color: white;
+  padding:1.5rem 5rem;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  right: 2rem;
+}
+/*This section is the second section*/
+.no2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width:74%;
+  margin: 0 auto;
+}
+.no21 {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+
+}
+.no21 .no211 {
+  margin: 3rem 0 3rem 6rem;
+  text-align: center;
+}
+
+.no211 img {
+  width: 3.5rem;
+  margin-bottom: 1.54rem;
+}
+.no211 .small {
+  margin-top: 0;}
+.small img {
+  padding-bottom:2rem;
+}
+
+.no2 .no22 {
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5rem;
+  width: 35%;
+}
+.no22 h3 {
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+  color: white;
+  width: 10rem;
+  border: 1px solid black;
+}
+
+.no222 {
+margin-left: 2.5%;
+}
+.no221 {
+margin-right: 2.5%;
+}
+
+/* This section is styling for footer. */
+
+footer {
+  width: 74%;
+  display: flex;
+  align-items: center;
+  padding: 4rem 3rem;
+  background-color: azure;
+  margin:0 auto;
+}
+footer img {
+  height: 1.5rem;
+  margin: 0 1rem;
+}
