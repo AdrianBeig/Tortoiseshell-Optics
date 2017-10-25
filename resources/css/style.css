@@ -2,6 +2,12 @@ html {
   font-size: 18px;
   line-height: 1.4px;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 /*This is the parth 1 of css*/
 .no1 {
   display: flex;
@@ -12,8 +18,7 @@ html {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
   background-repeat:no-repeat ;
   background-size: cover;
-
-
+  background-position: center;
 }
 /*This part design the footer*/
 header {
@@ -45,6 +50,9 @@ margin: 1rem 1rem;
 .right-header span {
   margin-left: 2rem;
 }
+.right-header .menu {
+display: none;
+}
 /* This part is styling for statement part*/
 .statement {
   width: 74%;
@@ -68,8 +76,7 @@ margin: 1rem 1rem;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  width:74%;
-  margin: 0 auto;
+  width:100%;
 }
 .no21 {
   display: flex;
@@ -80,6 +87,7 @@ margin: 1rem 1rem;
 .no21 .no211 {
   margin: 3rem 0 3rem 6rem;
   text-align: center;
+  line-height: 1.4rem;
 }
 
 .no211 img {
@@ -95,11 +103,17 @@ margin: 1rem 1rem;
 .no2 .no22 {
   display: flex;
   justify-content: center;
-  font-family: Helvetica;
-  font-weight: bold;
-  font-size: 1rem;
   margin-bottom: 5rem;
-  width: 35%;
+  font-family: Helvetica;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  width: 100%;
+}
+.no22 span {
+width: 35%;
+}
+.no22 .no222{
+  margin-left:5%;
 }
 .no22 h3 {
   background-color: cadetblue;
@@ -107,27 +121,122 @@ margin: 1rem 1rem;
   margin-bottom: 1rem;
   color: white;
   width: 10rem;
-  border: 1px solid black;
-}
-
-.no222 {
-margin-left: 2.5%;
-}
-.no221 {
-margin-right: 2.5%;
+  font-weight: bold;
 }
 
 /* This section is styling for footer. */
 
+.no3{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 footer {
-  width: 74%;
+  width:74%;
   display: flex;
   align-items: center;
   padding: 4rem 3rem;
   background-color: azure;
-  margin:0 auto;
 }
 footer img {
   height: 1.5rem;
   margin: 0 1rem;
+}
+
+/*This section is responsive desgin section*/
+
+@media screen and (max-width:875px){
+  .no1 {
+    background-position: 35%;
+   }
+  .media {
+    width:100%;
+  }
+  header {
+    margin-top: 0;
+  }
+  .statement {
+    margin-top: 5rem;
+  }
+  .statement h1 {
+  padding: 0.75rem 4rem;
+  font-size:1.33rem;
+  margin-right: 4rem;
+  width: 40%;
+  line-height: 1.2rem
+  }
+}
+@media screen and (max-width:647px){
+
+  .no1 {
+    background-position: 20%;
+    height: 17rem;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  .right-header span {
+    display: none;
+  }
+  .logo-top p {
+    display: none;
+  }
+  .right-header .menu {
+  display: inline;
+  color: white;
+  margin: 1rem 2rem;
+  }
+  .statement h1 {
+  padding: 1rem auto;
+  font-size:1.33rem;
+  margin: 0 0;
+  width: 100%;
+  line-height: 1.2rem
+  }
+  .statement {
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+  }
+  .no2 {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+  }
+  .no21 {
+    width: 100%;
+    margin: 2.23rem 0;
+    display: flex;
+    flex-flow: wrap;
+  }
+  .no21 .no211{
+    font-family: Helvetica;
+    font-size:0.77rem;
+    margin:1.54rem auto;
+    width: 100%;
+  }
+  .no22{
+    display: flex;
+    flex-flow: wrap;
+    margin: 0 auto;
+    font-family: Helvetica;
+    font-size: 0.77rem;
+  }
+  .no22 span {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+  .no22 .no221 {
+    margin-bottom: 4rem;
+  }
+  .no22 h3 {
+    margin-bottom: 1rem;
+  }
+  .no22 .no222 {
+    margin: 0 0;
+  }
+  .logo-bottom {
+    justify-content: center;
+  }
+.logo-bottom p {
+  display:none;
+}
 }
